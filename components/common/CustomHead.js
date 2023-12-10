@@ -4,7 +4,7 @@ import Head from 'next/head';
 const CustomHead = () => {
   return (
     <Head>
-      <title>Tu Título</title>
+      <title>Dopamina Visual</title>
       <link rel="icon" href="https://iili.io/JIrR5ZX.png" />
       {/* Agrega otras configuraciones del Head aquí si es necesario */}
     </Head>
