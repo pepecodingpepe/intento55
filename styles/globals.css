@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-color-rgb: #3d3d3c; /* Color del texto */
+  --background-start-color-rgb: 214, 219, 220; /* Color de fondo de inicio */
+  --background-end-color-rgb: 255, 255, 255; /* Color de fondo final */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color-rgb: 255, 255, 255; /* Color del texto en modo oscuro */
+    --background-start-color-rgb: 0, 0, 0; /* Color de fondo de inicio en modo oscuro */
+    --background-end-color-rgb: 0, 0, 0; /* Color de fondo final en modo oscuro */
+  }
+}
+
+
+body {
+  
+   font-family: 'roboto', sans-serif;
+  
+
+  color: #3d3d3c ;
+  background: linear-gradient(
+      to left,
+      transparent,
+      #f1f1f1
+    )
+    #d5dfe6;
+}
+
+/* FORMATO PARA BARRA DE NAVEGACIÓN */
+
+.nav-linkA {
+  padding: 0.5rem 1rem; /* Agrega padding */
+  margin-right: 1rem; /* Agrega margen derecho entre elementos */
+  color: #3d3d3c; /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado predeterminado en los enlaces */
+  font-size: 1rem; /* Tamaño de la fuente */
+  font-weight: 600;
+}
+
+.nav-linkA:hover {
+  color: #bace38; /* Cambia el color del texto al pasar el mouse sobre el enlace */
+  font-weight: 700;
+  
+}
+
+.nav-linkB {
+  padding: 0.5rem 1rem; /* Agrega padding */
+  margin-right: 1rem; /* Agrega margen derecho entre elementos */
+  color: #3d3d3c; /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado predeterminado en los enlaces */
+  font-size: 1rem; /* Tamaño de la fuente */
+  font-weight: 600;
+}
+
+.nav-linkB:hover {
+  color: #86bb58; /* Cambia el color del texto al pasar el mouse sobre el enlace */
+  font-weight: 700;
+  
+}
+
+.nav-linkC {
+  padding: 0.5rem 1rem; /* Agrega padding */
+  margin-right: 1rem; /* Agrega margen derecho entre elementos */
+  color: #3d3d3c; /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado predeterminado en los enlaces */
+  font-size: 1rem; /* Tamaño de la fuente */
+  font-weight: bold;
+}
+
+.nav-linkC:hover {
+  color: #5bb9bd; /* Cambia el color del texto al pasar el mouse sobre el enlace */
+  font-weight: 700;
+  
+}
+
+.nav-link {
+  padding: 0.5rem 1rem; /* Agrega padding */
+  margin-right: 1rem; /* Agrega margen derecho entre elementos */
+  color: #3d3d3c; /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado predeterminado en los enlaces */
+  font-size: 1rem; /* Tamaño de la fuente */
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #45bffc; /* Cambia el color del texto al pasar el mouse sobre el enlace */
+  font-weight: 700;
+  
+}
+
+/* BOTON DE TRABAJEMOS JUNTOS */
+
+.nav-link2 {
+  padding: 0.5rem 1rem; /* Agrega padding */
+  margin-right: 1rem; /* Agrega margen derecho entre elementos */
+  color: #ffffff; /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado predeterminado en los enlaces */
+  font-size: 1rem; /* Tamaño de la fuente */
+  font-weight: bold;
+
+  display: inline-block; /* Hace que el botón se comporte como un elemento en línea */
+  background-color: #9560a1; /* Color de fondo del botón */
+  border: 2px solid #ffffff; /* Borde del botón */
+  border-radius: 15px; /* Bordes redondeados del botón */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+  transition: background-color 0.5s, color 0.3s; /* Agrega una transición suave al color de fondo y al texto */
+
+}
+
+
+
+
+
+.nav-link2:hover {
+  color: #ffffff; /* Cambia el color del texto al pasar el mouse sobre el enlace */
+
+  
+  background-color: #ca368d; /* Cambia el color de fondo al pasar el ratón */
+
+
+}
+
+.Footer {
+
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      #ffffff
+    )
+    #e2e2e2;
+
+}
+
+
