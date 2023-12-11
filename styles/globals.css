@@ -26,9 +26,17 @@ body {
   background: linear-gradient(
       to left,
       transparent,
-      #f1f1f1
+      #f7f7f7
     )
-    #d5dfe6;
+    #dfe8ee;
+
+    
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Ajusta el valor de z-index según sea necesario */
 }
 
 /* FORMATO PARA BARRA DE NAVEGACIÓN */
@@ -44,7 +52,7 @@ body {
 
 .nav-linkA:hover {
   color: #bace38; /* Cambia el color del texto al pasar el mouse sobre el enlace */
-  font-weight: 700;
+
   
 }
 

@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="tracking-wide shadow-lg bg-gradient-to-r from-white to-slate-100" >
+    <header className="tracking-wide shadow-lg bg-gradient-to-r from-white to-zinc-100" >
       <div className="flex justify-between items-center p-4">
         <div>
           <Link href="/">
@@ -20,6 +20,7 @@ const Header = () => {
           </Link>
         </div>
         <nav className={`flex ${isMenuOpen ? 'flex-col' : 'hidden md:flex'}`}>
+          
           <Link href="/"  className="nav-linkA">Home</Link>
           <Link href="/services"  className="nav-linkB">Productos & Servicios</Link>
           <Link href="/portfolio"  className="nav-linkC">Portafolio</Link>
