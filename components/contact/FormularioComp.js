@@ -7,6 +7,8 @@ const FormularioComp = () => {
     nombre: '',
     email: '',
     mensaje: '',
+    mensaje1: '',
+    mensaje2: '',
   });
 
   const handleChange = (e) => {
@@ -65,6 +67,18 @@ const FormularioComp = () => {
         required
       ></textarea>
       <br />
+
+      <br />
+
+<label htmlFor="mensaje1">Mensaje 1 1:</label>
+<textarea
+  id="mensaje1"
+  name="mensaje1"
+  value={formData.mensaje1}
+  onChange={handleChange}
+  required
+></textarea>
+<br />
 
       <button type="submit">Enviar</button>
     </form>

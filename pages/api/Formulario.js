@@ -7,7 +7,7 @@ export default async function handler(req, res) {
     return res.status(405).end(); // Método no permitido
   }
 
-  const { nombre, email, mensaje } = req.body;
+  const { nombre, email, mensaje, mensaje1 } = req.body;
 
   const uri = process.env.MONGODB_URI;
   const client = new MongoClient(uri);
@@ -21,6 +21,7 @@ export default async function handler(req, res) {
       nombre,
       email,
       mensaje,
+      mensaje1,
     });
 
     res.status(201).json({ success: true, data: result});
