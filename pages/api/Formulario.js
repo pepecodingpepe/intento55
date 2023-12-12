@@ -10,12 +10,12 @@ export default async function handler(req, res) {
   const { nombre, email, mensaje } = req.body;
 
   const uri = process.env.MONGODB_URI;
-  const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+  const client = new MongoClient(uri);
 
   try {
     await client.connect();
-    const database = client.db('tu_basede_datos');
-    const collection = database.collection('tu_coleccion');
+    const database = client.db('clientes_db');
+    const collection = database.collection('dopaminavisual');
 
     const result = await collection.insertOne({
       nombre,
@@ -23,7 +23,7 @@ export default async function handler(req, res) {
       mensaje,
     });
 
-    res.status(201).json({ success: true, data: result.ops[0] });
+    res.status(201).json({ success: true, data: result});
   } catch (error) {
     console.error('Error al insertar en la base de datos:', error);
     res.status(500).json({ success: false, error: 'Error interno del servidor' });
