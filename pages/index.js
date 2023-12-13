@@ -4,11 +4,7 @@ import ServiceCard from '../components/home/ServiceCard';
 import Footer from '../components/common/Footer';
 import CustomHead from '../components/common/CustomHead'; // Importa el componente CustomHead
 
-if (typeof window === 'undefined') {
-  // Código que usa fs y solo debe ejecutarse en el servidor
-  const fs = require('fs');
-  // Resto del código...
-}
+
 
 const Home = () => {
   return (
