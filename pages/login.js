@@ -1,15 +1,19 @@
-// pages/login.js
-import { signIn } from 'next-auth/react';
+import { useSession, signIn, signOut } from "next-auth/react"
 
-export default function LoginPage() {
-  const handleSignInWithGoogle = async () => {
-    await signIn('google', { redirect: false });
-  };
-
+export default function Component() {
+  const { data: session } = useSession()
+  if (session) {
+    return (
+      <>
+        Signed in as {session.user.email} <br />
+        <button onClick={() => signOut()}>Sign out</button>
+      </>
+    )
+  }
   return (
-    <div>
-      <h1>Iniciar Sesión</h1>
-      <button onClick={handleSignInWithGoogle}>Iniciar Sesión con Google</button>
-    </div>
-  );
+    <>
+      Not signed in <br />
+      <button onClick={() => signIn()}>Sign in</button>
+    </>
+  )
 }
