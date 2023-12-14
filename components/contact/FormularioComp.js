@@ -20,70 +20,94 @@ const FormularioComp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
       const response = await axios.post('/api/formulario', formData);
-  
+
       // Maneja la respuesta del servidor
       console.log(response.data);
-  
+
       // Puedes realizar acciones adicionales según la respuesta del servidor
     } catch (error) {
       console.error('Error al enviar el formulario:', error);
     }
   };
-  
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="nombre">Nombre:</label>
-      <input
-        type="text"
-        id="nombre"
-        name="nombre"
-        value={formData.nombre}
-        onChange={handleChange}
-        required
-      />
-      <br />
+    <form style={{ width: '50%', margin: 'auto' }} onSubmit={handleSubmit}>
+      <div style={{ marginBottom: '20px' }}>
+        <label style={{ display: 'block', marginBottom: '5px' }} htmlFor="nombre">
+          Nombre:
+        </label>
+        <input
+          style={{ width: '100%', padding: '8px', boxSizing: 'border-box', marginBottom: '10px' }}
+          type="text"
+          id="nombre"
+          name="nombre"
+          value={formData.nombre}
+          onChange={handleChange}
+          required
+        />
+      </div>
 
-      <label htmlFor="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        value={formData.email}
-        onChange={handleChange}
-        required
-      />
-      <br />
+      <div style={{ marginBottom: '20px' }}>
+        <label style={{ display: 'block', marginBottom: '5px' }} htmlFor="email">
+          Email:
+        </label>
+        <input
+          style={{ width: '100%', padding: '8px', boxSizing: 'border-box', marginBottom: '10px' }}
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+      </div>
 
-      <label htmlFor="mensaje">Mensaje:</label>
-      <textarea
-        id="mensaje"
-        name="mensaje"
-        value={formData.mensaje}
-        onChange={handleChange}
-        required
-      ></textarea>
-      <br />
+      <div style={{ marginBottom: '20px' }}>
+        <label style={{ display: 'block', marginBottom: '5px' }} htmlFor="mensaje">
+          Nombre de tu negocio:
+        </label>
+        <textarea
+          style={{ width: '100%', padding: '8px', boxSizing: 'border-box', marginBottom: '10px' }}
+          id="mensaje"
+          name="mensaje"
+          value={formData.mensaje}
+          onChange={handleChange}
+          required
+        ></textarea>
+      </div>
 
-      <br />
+      <div style={{ marginBottom: '20px' }}>
+        <label style={{ display: 'block', marginBottom: '5px' }} htmlFor="mensaje1">
+          Explica brevemente a que te dedicas:
+        </label>
+        <textarea
+          style={{ width: '100%', padding: '8px', boxSizing: 'border-box', marginBottom: '10px' }}
+          id="mensaje1"
+          name="mensaje1"
+          value={formData.mensaje1}
+          onChange={handleChange}
+          required
+        ></textarea>
+      </div>
 
-<label htmlFor="mensaje1">Mensaje 1 1:</label>
-<textarea
-  id="mensaje1"
-  name="mensaje1"
-  value={formData.mensaje1}
-  onChange={handleChange}
-  required
-></textarea>
-<br />
-
-      <button type="submit">Enviar</button>
+      <button
+        style={{
+          backgroundColor: '#4caf50',
+          color: 'white',
+          padding: '10px 15px',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+        }}
+        type="submit"
+      >
+        Enviar
+      </button>
     </form>
   );
 };
 
 export default FormularioComp;
-

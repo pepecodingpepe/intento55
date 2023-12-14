@@ -23,9 +23,9 @@ const Header = () => {
           
           <Link href="/"  className="nav-linkA">Home</Link>
           <Link href="/services"  className="nav-linkB">Productos & Servicios</Link>
-          <Link href="/portfolio"  className="nav-linkC">Portafolio</Link>
+          <Link href="/portfolio"  className="nav-linkC">Árbol de Vida</Link>
           <Link href="/clients" className="nav-link">Nuestros Clientes</Link>
-          <Link href="/contact" className="nav-link2 ">Manos a la Obra</Link>
+          <Link href="/contact" className="nav-link2 ">Contacto</Link>
 
         </nav>
         <button
