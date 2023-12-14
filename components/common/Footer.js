@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
 
         <div>
-          <button className="bg-slate-600 text-white font-black text-lg px-4 py-3 rounded-xl mr-8 mt-px-8 hover:bg-lime-500">CONTACTO</button>
+          <a href="/login2" className="bg-slate-600 text-white font-black text-lg px-4 py-3 rounded-xl mr-8 mt-px-8 hover:bg-lime-500">LOG IN</a>
 
         </div>
       </div>
