@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 import Header from '../components/common/Header';
 import HomeBanner from '../components/home/HomeBanner';
 import ServiceCard from '../components/home/ServiceCard';
