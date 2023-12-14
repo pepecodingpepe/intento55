@@ -9,11 +9,13 @@ const Clients = () => {
     <div>
       <CustomHead />
       <Header />
-      <section className="p-8">
-        <h2 className="text-3xl font-bold mb-4">Nuestros Clientes</h2>
-        <p className="mb-4 text-lg font-mono">Aquí va el contenido del blog sobre tu negocio de consultoría.</p>
-        {/* Agrega más párrafos, imágenes y otros elementos según sea necesario */}
+      <section className="min-h-screen flex items-center justify-center">
+      <p className="flex-wrap font-serif text-7xl text-center font-bold mb-2 py-10 mx-44">Página en construcción </p>
+      
+
+ 
       </section>
+      
       <Footer />
     </div>
   );

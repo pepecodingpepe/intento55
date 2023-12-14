@@ -48,11 +48,24 @@ const Home = () => {
 
   
       
-      <div className="flex flex-wrap justify-center p-8 mx-0.5 mx-3.5">
-            <div className="mx-7 "> <ServiceCard title="Diseño gráfico en tiempo real" description="Este servicio te servirá si tienes una idea clara y precisa de lo que quieres diseñar, no importa si es un logo, una etiqueta o un poster. " ctaText="mas información" /></div>
-            <div className="mx-7"> <ServiceCard title="Consultoría 1 a 1 para emprendedores" description="Aquí va el detalle" ctaText="mas información" /></div>
-            <div className="mx-7"> <ServiceCard title="Estrategias de expansión comercial" description="Aquí va el detalle" ctaText="mas información" /></div>
-            <div className="mx-7"> <ServiceCard title="Modelador de negocios: comienza desde cero" description="Aquí va el detalle" ctaText="mas información" /></div>
+      <div className=" flex flex-wrap justify-center p-8 mx-0.5 mx-3.5">
+            <div className="mx-7 w-96 "> <ServiceCard imageUrl="https://www.druidai.com/hubfs/Imported_Blog_Media/business-process-automation-chatbot.jpg" 
+            title="Diseño gráfico en tiempo real" 
+            description="Servicio para quienes tienen una idea clara y precisa de lo que necesitan diseñar, desde un logotipo, hasta una etiqueta o un poster para un evento. " 
+            ctaText="Mas información" ctaLink="/services" /></div>
+
+            <div className="mx-7 w-96"> <ServiceCard imageUrl="https://www.druidai.com/hubfs/Imported_Blog_Media/business-process-automation-chatbot.jpg" 
+            title="Consultoría 1 a 1 para emprendedores" 
+            description="Si lo que necesitas es atención personalizada para atender tus necesidades específicas, este servicio es para tí." ctaText="Mas información" ctaLink="/services" /></div>
+
+            <div className="mx-7 w-96"> <ServiceCard imageUrl="https://www.druidai.com/hubfs/Imported_Blog_Media/business-process-automation-chatbot.jpg" 
+            title="Estrategias de expansión comercial" 
+            description="Incrementa las ventas de tu negocio con los recursos que tienes a la mano, nosotros nos encargamos de armar una estrategia a tu medida." ctaText="Mas información" ctaLink="/services" /></div>
+
+            <div className="mx-7 w-96"> <ServiceCard imageUrl="https://www.druidai.com/hubfs/Imported_Blog_Media/business-process-automation-chatbot.jpg" 
+            title="Modelador de negocios: comienza desde cero" 
+            description="¿Estas a punto de abandonar tu trabajo fijo para comenzar un negocio? Te ayudamos en cada paso para que lo logres sin contratiempos" ctaText="Mas información" 
+            ctaLink="/services" /></div>
 
 
 
