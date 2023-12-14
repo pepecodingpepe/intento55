@@ -1,4 +1,6 @@
 // /pages/contact.js
+/*  @next/next/no-img-element */
+
 import Header from '@/components/common/Header';
 import Footer from '../components/common/Footer';
 import CustomHead from '../components/common/CustomHead'; // Importa el componente CustomHead

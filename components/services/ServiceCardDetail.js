@@ -1,4 +1,5 @@
 // /components/services/ServiceCardDetail.js
+/* @next/next/no-img-element*/
 const ServiceCardDetail = ({ type, availability, cost }) => {
     return (
       <div className="bg-white p-6 shadow-md rounded-md mb-4">
