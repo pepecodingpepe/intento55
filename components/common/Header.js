@@ -1,4 +1,5 @@
 // /components/common/Header.js
+<<<<<<< HEAD
 
 
 
@@ -233,6 +234,9 @@ export default function Example() {
 
 /*{  Header Viejo _______________________________________
 
+=======
+/* @next/next/no-img-element*/
+>>>>>>> 8553d9d2da7e89ad8f0fbf9c0b10f7bd8389a2c4
 
 import Link from 'next/link';
 import { useState } from 'react';

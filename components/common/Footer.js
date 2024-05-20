@@ -1,4 +1,8 @@
 // /components/common/Footer.js
+
+/* @next/next/no-html-link-for-pages */
+
+
 import { useEffect, useState } from 'react';
 
 const Footer = () => {
