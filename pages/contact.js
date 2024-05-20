@@ -15,11 +15,11 @@ const Contact = () => {
 
       <div className="flex justify-center items-center py-12">
 
-<figure class="relative h-auto max-w-3xl transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+<figure className="relative h-auto max-w-3xl transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
 <a href="">
-<img class="rounded-lg" src="https://www.gadens.com/wp-content/uploads/2017/08/Handshake_Banner-768x261.jpg" alt="image description"/>
+<img className="rounded-lg" src="https://www.gadens.com/wp-content/uploads/2017/08/Handshake_Banner-768x261.jpg" alt="image description"/>
 </a>
-<figcaption class="absolute px-4 text-2xl text-white bottom-6">
+<figcaption className="absolute px-4 text-2xl text-white bottom-6">
 <p className="font-mono items-center"></p>
 </figcaption>
 </figure>
@@ -33,7 +33,7 @@ const Contact = () => {
 
 
       <p className="flex-wrap font-serif text-7xl text-center font-bold mb-2 py-8 mx-44 px-36">
-                Agenda una cita y elevemos tu empresa al <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-lime-400">siguiente nivel</span> 
+                Agenda una cita y elevemos tu empresa al <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-lime-400">siguiente nivel</span> 
               
               </p>
 

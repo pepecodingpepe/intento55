@@ -24,7 +24,7 @@ const Home = () => {
 
 
               <p className="flex-wrap font-serif text-7xl text-center font-bold mb-2 py-8 mx-44 px-36">
-                Diseñamos estrategias y soluciones <span class="text-transparent bg-clip-text bg-gradient-to-r to-fuchsia-600 from-sky-400">visuales</span> para emprendedores
+                Diseñamos estrategias y soluciones <span className="text-transparent bg-clip-text bg-gradient-to-r to-fuchsia-600 from-sky-400">visuales</span> para emprendedores
               </p>
 
                 
@@ -33,11 +33,11 @@ const Home = () => {
 
    <div className="flex justify-center items-center py-12">
 
-              <figure class="relative h-auto max-w-3xl transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+              <figure className="relative h-auto max-w-3xl transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
         <a href="/contact">
-          <img class="rounded-lg" src="https://ici.net.au/blog/wp-content/uploads/2018/04/ICI-Jobs-for-People-with-Creative-Minds.jpg" alt="image description"/>
+          <img className="rounded-lg" src="https://ici.net.au/blog/wp-content/uploads/2018/04/ICI-Jobs-for-People-with-Creative-Minds.jpg" alt="image description"/>
           </a>
-           <figcaption class="absolute px-4 text-2xl text-white bottom-6">
+           <figcaption className="absolute px-4 text-2xl text-white bottom-6">
             <p className="font-mono items-center">Hagamos crecer tu negocio</p>
           </figcaption>
             </figure>
