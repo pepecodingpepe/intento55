@@ -52,8 +52,8 @@ const navigation = {
 
 export default function Footer2() {
   return (
-    <footer className="bg-slate-100">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-16 sm:py-12 lg:px-8">
+    <footer className="bg-gradient-to-r from-slate-50 to-slate-200">
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-12 sm:py-8 lg:px-8">
 
         <div className="mt-4 flex justify-center space-x-10">
           {navigation.social.map((item) => (
