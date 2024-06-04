@@ -146,7 +146,7 @@ export default function Example() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Dopamina Visual</span>
               <img
-                className="h-8 w-auto"
+                className="h-16 w-auto"
                 src="https://i.postimg.cc/7hFSPtPF/Material-Didactico-02-02.png"
                 alt=""
               />
